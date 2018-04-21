@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import Nav from './nav/index';
 import expect from 'expect';
 
@@ -17,7 +17,7 @@ it('Valida que exista el elemento Navbar', () => {
     // expect(wrapper.contains(welcome)).to.equal(true);
   });
 it('Valida que al presionar el boton se despliegue un menu', ()=>{
-    const nav = shallow(<Nav/>);
-    expect(nav.find(prop:'id').simulate('click')).toContain(Menu);
-    expect(nav.find(prop:'id').exists()).toEqual(true);
+    const nav = mount(<Nav/>);
+    nav.find('#mimenu').simulate('click');
+    expect(nav.find('#mimenu').exists()).toEqual(true);
 });

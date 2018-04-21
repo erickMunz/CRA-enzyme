@@ -16,7 +16,7 @@ import {
     Position
 } from "@blueprintjs/core";
 
-
+import {Contenido} from '../content/contenido';
 import { BaseExample, handleBooleanChange } from "@blueprintjs/docs-theme";
 
 
@@ -38,6 +38,7 @@ export default class Nav extends React.Component{
             </Menu>
 );
         return (
+            <div>
             <Navbar>
                 <NavbarGroup align={Alignment.LEFT}>
                     <NavbarHeading>Praxis</NavbarHeading>
@@ -45,9 +46,11 @@ export default class Nav extends React.Component{
                     <Button className={Classes.MINIMAL} icon="home" text="Home" />
                     <Button className={Classes.MINIMAL} icon="document" text="Files" />
                     <Popover content={compassMenu} position={Position.RIGHT_BOTTOM}>
-                        <Button icon="share" id="menu" text="Abrelo prro..." /></Popover>
+                        <Button icon="share" id="mimenu" text="Abrelo prro..." /></Popover>
                     </NavbarGroup>
             </Navbar>
+            <Contenido />
+            </div>
         );
     }
 }

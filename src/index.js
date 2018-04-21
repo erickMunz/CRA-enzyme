@@ -7,4 +7,5 @@ import registerServiceWorker from './registerServiceWorker';
 import "../node_modules/@blueprintjs/core/lib/css/blueprint.css";
 
 ReactDOM.render(<Nav />, document.getElementById('root'));
+
 registerServiceWorker();
