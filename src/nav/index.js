@@ -17,6 +17,7 @@ import {
 } from "@blueprintjs/core";
 
 import {Contenido} from '../content/contenido';
+import {Cartas} from '../content/cartas'
 import { BaseExample, handleBooleanChange } from "@blueprintjs/docs-theme";
 
 
@@ -50,6 +51,7 @@ export default class Nav extends React.Component{
                     </NavbarGroup>
             </Navbar>
             <Contenido />
+            <Cartas />
             </div>
         );
     }

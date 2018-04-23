@@ -5,7 +5,9 @@ import App from './App';
 import Nav from './nav/index';
 import registerServiceWorker from './registerServiceWorker';
 import "../node_modules/@blueprintjs/core/lib/css/blueprint.css";
-
+import "../node_modules/normalize.css/normalize.css";
+import "../node_modules/@blueprintjs/icons/lib/css/blueprint-icons.css";
+    
 ReactDOM.render(<Nav />, document.getElementById('root'));
 
 registerServiceWorker();

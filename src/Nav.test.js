@@ -1,9 +1,11 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import Nav from './nav/index';
+import assert from 'chai';
 import expect from 'expect';
+import Cartas from './content/cartas'
 
-import {Button, Navbar, Menu} from '@blueprintjs/core';
+import {Button, Navbar, Menu, Classes, Overlay, Card} from '@blueprintjs/core';
 
 
 it('Valida que sean 3 botones ', () => {
@@ -18,6 +20,16 @@ it('Valida que exista el elemento Navbar', () => {
   });
 it('Valida que al presionar el boton se despliegue un menu', ()=>{
     const nav = mount(<Nav/>);
-    nav.find('#mimenu').simulate('click');
-    expect(nav.find('#mimenu').exists()).toEqual(true);
+    const menu= nav.find("#mimenu").hostNodes().simulate('mouseenter');
+    nav.find("#mimenu").hostNodes().simulate('mouseleave');
+    setTimeout(() => {
+      // Popover delays closing using setTimeout, so need to defer this check too.
+      const isOpen = wrapper.find(Overlay).prop("isOpen");
+      assert.equal(isOpen, false);
+  });
+
+});
+it('Valida que se encuentren tres cartas', ()=>{
+  const cartas = shallow(<Cartas />);
+  expect(cartas.find(Card).length).toBe(1);
 });
