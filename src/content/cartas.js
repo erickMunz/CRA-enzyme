@@ -7,16 +7,16 @@ export interface ICollapseExampleState {
     isOpen?: boolean;
 };
  
-export class Cartas extends BaseExample<{}, ICollapseExampleState >{
+export class Cartas extends React.Component<{}, ICollapseExampleState >{
      state = {
         isOpen: false,
     }; 
-   renderExample() {
+   render() {
         return (
             
             <ControlGroup vertical={false} fill={false} > 
             <div className={Classes.TREE_NODE_CONTENT}> 
-                        <Card interactive={true} elevation={Elevation.TWO} >
+                        <Card interactive={true} elevation={Elevation.TWO} className={Classes.DARK} >
                             <h5>
                                 <a href="#">Analytical applications</a>
                             </h5>
@@ -26,7 +26,7 @@ export class Cartas extends BaseExample<{}, ICollapseExampleState >{
                             </p>
                             <Button text="Explore products"  />
                         </Card>
-                        <Card Card interactive={true} elevation={Elevation.TWO} >
+                        <Card Card interactive={true} elevation={Elevation.TWO} className={Classes.DARK} >
                             <h5>
                                 <a href="#">Analytical applications</a>
                             </h5>
@@ -36,7 +36,7 @@ export class Cartas extends BaseExample<{}, ICollapseExampleState >{
                             </p>
                             <Button text="Explore products" className={Classes.BUTTON} />
                         </Card>
-                        <Card Card interactive={true} elevation={Elevation.TWO} >
+                        <Card Card interactive={true} elevation={Elevation.TWO} className={Classes.DARK} >
                             <h5>
                                 <a href="#">Analytical applications</a>
                             </h5>

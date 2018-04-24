@@ -1,12 +1,14 @@
 import * as React from 'react';
-import {Table} from '@blueprintjs/core';
+import {Text} from '@blueprintjs/core';
 
 
 export class Contenido extends React.Component{
     render(){ return(
-        
-        <h1> Este texto es prueba prro</h1>
-        
+        <div style={{height:"200px", alignContent:"center",width:"500px"}}>
+            <h1> Hola mundo</h1>
+            <Text> Este texto es prueba de documentos</Text>
+        </div>
+
     );
         
     }
