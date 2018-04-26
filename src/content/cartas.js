@@ -3,17 +3,14 @@ import { Button, Card, Classes, Elevation, ControlGroup ,Collapse} from "@bluepr
 import { BaseExample } from "@blueprintjs/docs-theme";
 
 
-export interface ICollapseExampleState {
-    isOpen?: boolean;
-};
  
-export class Cartas extends React.Component<{}, ICollapseExampleState >{
+export default class Cartas extends React.Component{
      state = {
         isOpen: false,
     }; 
    render() {
         return (
-            
+            <div style={{height:"100px", alignContent:"center",width:"100%"}}>
             <ControlGroup vertical={false} fill={false} > 
             <div className={Classes.TREE_NODE_CONTENT}> 
                         <Card interactive={true} elevation={Elevation.TWO} className={Classes.DARK} >
@@ -62,6 +59,7 @@ export class Cartas extends React.Component<{}, ICollapseExampleState >{
                             </Card>
                         </div>
                     </ControlGroup>
+                    </div>
        
         );
     }

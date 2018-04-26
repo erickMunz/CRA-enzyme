@@ -47,11 +47,10 @@ export default class Nav extends React.Component{
                     <Button className={Classes.MINIMAL} icon="home" text="Home" />
                     <Button className={Classes.MINIMAL} icon="document" text="Files" />
                     <Popover content={compassMenu} position={Position.RIGHT_BOTTOM}>
-                        <Button icon="share" id="mimenu" text="Abrelo prro..." /></Popover>
+                        <Button icon="share" id="mimenu" text="Presiona el boton" /></Popover>
                     </NavbarGroup>
             </Navbar>
-            <Contenido />
-            <Cartas />
+            
             </div>
         );
     }

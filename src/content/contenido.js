@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Text} from '@blueprintjs/core';
 
 
-export class Contenido extends React.Component{
+export default class Contenido extends React.Component{
     render(){ return(
         <div style={{height:"200px", alignContent:"center",width:"500px"}}>
             <h1> Hola mundo</h1>
