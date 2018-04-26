@@ -17,7 +17,7 @@ import {
 } from "@blueprintjs/core";
 
 import {Contenido} from '../content/contenido';
-import {Cartas} from '../content/cartas'
+import {Cartas} from '../content/cartas';
 import { BaseExample, handleBooleanChange } from "@blueprintjs/docs-theme";
 
 
@@ -40,7 +40,7 @@ export default class Nav extends React.Component{
 );
         return (
             <div>
-            <Navbar>
+            <Navbar className={Classes.DARK}>
                 <NavbarGroup align={Alignment.LEFT}>
                     <NavbarHeading>Praxis</NavbarHeading>
                     <NavbarDivider />
@@ -50,8 +50,6 @@ export default class Nav extends React.Component{
                         <Button icon="share" id="mimenu" text="Abrelo prro..." /></Popover>
                     </NavbarGroup>
             </Navbar>
-            <Contenido />
-            <Cartas />
             </div>
         );
     }
