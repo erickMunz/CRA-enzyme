@@ -8,7 +8,6 @@ import {
     NavbarDivider,
     NavbarGroup,
     NavbarHeading,
-    Switch,
     Menu, 
     MenuDivider, 
     MenuItem, 
@@ -16,9 +15,6 @@ import {
     Position
 } from "@blueprintjs/core";
 
-import {Contenido} from '../content/contenido';
-import {Cartas} from '../content/cartas';
-import { BaseExample, handleBooleanChange } from "@blueprintjs/docs-theme";
 
 
 
@@ -47,13 +43,9 @@ export default class Nav extends React.Component{
                     <Button className={Classes.MINIMAL} icon="home" text="Home" />
                     <Button className={Classes.MINIMAL} icon="document" text="Files" />
                     <Popover content={compassMenu} position={Position.RIGHT_BOTTOM}>
-                        <Button icon="share" id="mimenu" text="Presiona el boton" /></Popover>
+                        <Button icon="share" id="mimenu" text="Opciones" /></Popover>
                     </NavbarGroup>
             </Navbar>
-<<<<<<< HEAD
-            
-=======
->>>>>>> f3164f8359936dda7a1988405b43a26cd7b93dba
             </div>
         );
     }

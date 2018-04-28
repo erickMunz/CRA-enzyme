@@ -3,7 +3,6 @@ import { Button, Card, Classes, Elevation, ControlGroup ,Collapse} from "@bluepr
 import { BaseExample } from "@blueprintjs/docs-theme";
 
 
-<<<<<<< HEAD
  
 export default class Cartas extends React.Component{
      state = {
@@ -16,34 +15,34 @@ export default class Cartas extends React.Component{
             <div className={Classes.TREE_NODE_CONTENT}> 
                         <Card interactive={true} elevation={Elevation.TWO} className={Classes.DARK} >
                             <h5>
-                                <a href="#">Analytical applications</a>
+                                <a href="#">Contenido 1</a>
                             </h5>
                             <p>
-                                User interfaces that enable people to interact smoothly with data, ask better questions, and make
-                                better decisions.
+                            Lorem ipsum dolor sit amet, nam eruditi comprehensam no. Quidam petentium et sed, in graeco euismod efficiendi vis. Eum ne errem labores vocibus, at pro purto referrentur. Ad partiendo abhorreant mei. Pri simul veritus ea.
+
                             </p>
                             <Button text="Explore products"  />
                         </Card>
                         <Card Card interactive={true} elevation={Elevation.TWO} className={Classes.DARK} >
                             <h5>
-                                <a href="#">Analytical applications</a>
+                                <a href="#">Contenido 2</a>
                             </h5>
                             <p>
-                                User interfaces that enable people to interact smoothly with data, ask better questions, and make
-                                better decisions.
+                            Lorem ipsum dolor sit amet, nam eruditi comprehensam no. Quidam petentium et sed, in graeco euismod efficiendi vis. Eum ne errem labores vocibus, at pro purto referrentur. Ad partiendo abhorreant mei. Pri simul veritus ea.
+
                             </p>
                             <Button text="Explore products" className={Classes.BUTTON} />
                         </Card>
                         <Card Card interactive={true} elevation={Elevation.TWO} className={Classes.DARK} >
                             <h5>
-                                <a href="#">Analytical applications</a>
+                                <a href="#">Contenido 3</a>
                             </h5>
                             <p>
-                                User interfaces that enable people to interact smoothly with data, ask better questions, and make
-                                better decisions.
+                            Lorem ipsum dolor sit amet, nam eruditi comprehensam no. Quidam petentium et sed, in graeco euismod efficiendi vis. Eum ne errem labores vocibus, at pro purto referrentur. Ad partiendo abhorreant mei. Pri simul veritus ea.
+
                             </p>
                             <div>
-                                <Button onClick={this.handleClick}>
+                                <Button id={"mimenu"} className={"menu"} onClick={this.handleClick}>
                                     {this.state.isOpen ? "Ocultar" : "Mostrar"} logs
                                 </Button>
                                 <Collapse isOpen={this.state.isOpen}>
@@ -62,43 +61,6 @@ export default class Cartas extends React.Component{
                     </ControlGroup>
                     </div>
        
-=======
-
-export default class Cartas extends React.Component{
-    state: ICardExampleState = {
-        elevation: 0,
-        interactive: false,
-        onClick: null,
-    };
-   render() {
-        return (
-            <div className={Classes.TREE_NODE_ICON}>
-                <div class="docs-card-example">
-                    <div class="pt-card pt-elevation-0 pt-interactive">
-                        <h5><a href="#">Data fusion platforms</a></h5>
-                        <p>Back-end infrastructure for integrating, managing, and securing data of any kind, from any source, at massive scale.</p>
-                    </div>
-                <div class="pt-card pt-elevation-1 pt-interactive">
-                    <h5><a href="#">Analytical applications</a></h5>
-                    <p>User interfaces that enable people to interact smoothly with data, ask better questions, and make better decisions.</p>
-                </div>
-                <div class="pt-card pt-elevation-2 pt-interactive">
-                    <h5><a href="#">For any data problem</a></h5>
-                    <p>Proven technology that can be deployed today, adapts to any domain, and produces operational results in weeks.</p>
-                    <div>
-                    <Button onClick={this.handleClick}>
-                    {this.state.isOpen ? "Hide" : "Show"} build logs
-                    </Button>
-                    <Collapse isOpen={this.state.isOpen}>
-                        <pre>
-                          Hola esto es una prueba
-                        </pre>
-                    </Collapse>
-                 </div>
-         </div>
-</div>
-</div>
->>>>>>> f3164f8359936dda7a1988405b43a26cd7b93dba
         );
     }
 
