@@ -4,7 +4,7 @@ import assert from 'chai';
 import expect from 'expect';
 import Cartas from './content/cartas';
 import sinon from 'sinon';
-import {ControlGroup, Button, Card} from '@blueprintjs/core'
+import {ControlGroup, Button, Card, Navbar} from '@blueprintjs/core'
 
 it('Valida que se encuentren dentro del componente ControlGroup',()=>{
     const wrapper = shallow(<Cartas/>);

@@ -10,7 +10,7 @@ export default class Cartas extends React.Component{
     }; 
    render() {
         return (
-            <div style={{height:"100px", alignContent:"center",width:"100%"}}>
+            <div style={{height:"110px", alignContent:"center",width:"100%"}}>
             <ControlGroup vertical={false} fill={false} > 
             <div className={Classes.TREE_NODE_CONTENT}> 
                         <Card interactive={true} elevation={Elevation.TWO} className={Classes.DARK} >

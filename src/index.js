@@ -16,7 +16,8 @@ ReactDOM.render(
         <Nav />
         
         <Formulario />
-        <Cartas />
+
+        <Cartas/>
         <Hint texto="Esta es una prueba" texto2="Esta no lo esperabas"/>
         </div>, document.getElementById('root'));
 

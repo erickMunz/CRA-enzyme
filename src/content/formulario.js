@@ -5,7 +5,7 @@ import {FormGroup} from '@blueprintjs/core'
 export default class Formulario extends React.Component{
     render(){
         return (
-            <div style={{height:"220px", textAlign:"left",width:"300px",position:"relative", top:"20px",left:"40%"}} >
+            <div style={{height:"320px", textAlign:"left",width:"300px",position:"relative", top:"20px",left:"40%"}} >
                 <FormGroup  
                     helperText="Por favor llena todos los campos."
                     label="Escribe tu nombre"
